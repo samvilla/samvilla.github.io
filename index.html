@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
+<head>
+  <meta charset="utf-8">
+  <title>Make and Play Udacity 2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="keywords" content="HTML,CSS,Javascript,Make your own 2048,Play 2048">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="2048 game"/>
+  <meta property="og:description" content="Play Udacity 2048. Then, make your own 2048 game in Udacity's 2 hour mini course for programming beginners!"/>
+  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Sam's 2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">
+      <a class="restart-button">New Game</a>
+      Use the arrow keys to slide  tiles. Combine similar tiles to create new ones.</p>
+      
+    </div>
+
+    <div class="pre-game">
+      <p class="learn">This is a 2048 version of Mr.Wassmuth's 5th period class</p><a class="learn" href="https://sdhc.edsby.com/299929#BaseStudent">Edsby!</a>
+    </div>
+
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Play Again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+
+    <p class="game-explanation">
+      <strong class="important">Story behind this 2048:</strong> Our class became very friendly and over the course of the year we began to give away nicknames to the people who earned it. The 2 tile was inspired by a boy named Connor who reminded us of Mondern Family character Luke. Going into the 4 tile which was inspired by Kyle who was determined to pass United States geography but failed to find New York. Then comes a girl Neha being the perfect fit for the 8 tile by correcting the phase indians to Native Americans any time she got the chance. With all these silly people there had to be someone to kill all the jokes our 16 tile told jokes so horribly she earned the name Jayus, which in Indonesian stood for 'bad joke teller'. Then there is always someone who takes jokes to far Mathew became known as racist making him the 32 tile. Emily a.k.a Kenny followed Mathew, with tile 64, due to her strange sense of cruel humor. Followed by a person who is never here to experience the humor Rocio, tile 128, nicknamed Oscar because she is following in her brother's footsteps. In tile 256, Nicole Warlord a close friend to Rocio. Tile 512 was Lincoln because I needed a smart kid to be in this game and the guy seemed pretty smart. Mr.Wassmuth, tile 1024, was nicknamed tear maker because he made Katie the Crier cry in tile 2048. The End. Well until AP Econ next year...
+    </p>
+    <hr>
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same value touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    This is a modified version of the <a href="http://gabrielecirulli.github.io/2048/" target="_blank">original game</a> created by Gabriele Cirulli.
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>
